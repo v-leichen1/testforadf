@@ -1,0 +1,25 @@
+{
+	"name": "SinkDataset_IR",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_IR",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SinkTableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "adfsample",
+			"table": {
+				"value": "@dataset().SinkTableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

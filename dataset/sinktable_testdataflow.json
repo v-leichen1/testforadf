@@ -1,0 +1,17 @@
+{
+	"name": "sinktable_testdataflow",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dataflow_ip_test",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "data_sink_table1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

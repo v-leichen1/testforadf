@@ -1,0 +1,18 @@
+{
+	"name": "AzureDatabricks1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-717770292086714.2.databricks.azure.cn",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/700f5094-60b4-454d-b63a-b8672d1aa95a/resourceGroups/databricks-quickstart/providers/Microsoft.Databricks/workspaces/databricks-quickstart-2",
+			"credential": {
+				"referenceName": "credential1",
+				"type": "CredentialReference"
+			},
+			"existingClusterId": "0921-094628-bqm4m8zg"
+		}
+	}
+}

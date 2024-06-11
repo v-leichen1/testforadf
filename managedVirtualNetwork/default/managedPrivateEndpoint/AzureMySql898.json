@@ -1,0 +1,7 @@
+{
+	"name": "AzureMySql898",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/700f5094-60b4-454d-b63a-b8672d1aa95a/resourceGroups/adfgroups-cl/providers/Microsoft.DBforMySQL/flexibleServers/test-mysql-adf",
+		"groupId": "mysqlServer"
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"name": "SinkDataset_CDC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_Blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat('Incremental-',pipeline().RunId,'.csv')",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "incchgtracking",
+					"type": "Expression"
+				},
+				"container": "adftutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

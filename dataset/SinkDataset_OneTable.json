@@ -1,0 +1,28 @@
+{
+	"name": "SinkDataset_OneTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_Blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@CONCAT('Incremental-', pipeline().RunId, '.txt')",
+					"type": "Expression"
+				},
+				"folderPath": "incrementalcopy",
+				"container": "adftutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

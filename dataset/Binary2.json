@@ -1,0 +1,19 @@
+{
+	"name": "Binary2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLSGen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "data_1bdb57d1-73f5-4c07-a931-0a44259a3a08_ab12c3a1-8891-4086-a782-47cc5412aa58.txt",
+				"fileSystem": "sample-data"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

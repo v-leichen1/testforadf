@@ -1,0 +1,25 @@
+{
+	"name": "SinkDataset_delta",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_Blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "incrementalcopy1",
+				"folderPath": "incrementalcopy",
+				"container": "adftutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

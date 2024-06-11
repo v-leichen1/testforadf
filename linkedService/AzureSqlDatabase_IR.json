@@ -1,0 +1,16 @@
+{
+	"name": "AzureSqlDatabase_IR",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=sqlserver-metastore.database.chinacloudapi.cn;initial catalog=adfsample;user id=azureuser",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlZWQwYWY2MC1lYjMxLTQwMWMtOTVkMy1iNGUxNzliY2Y2ZmMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "MySelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

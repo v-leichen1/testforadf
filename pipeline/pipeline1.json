@@ -1,0 +1,30 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/v-leichen1@mcpod.partner.onmschina.cn/Case test/sql and python query table"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks3",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-05-14T06:10:54Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

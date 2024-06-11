@@ -1,0 +1,10 @@
+{
+	"name": "AzureBlobStorage-private-endpoint",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/700f5094-60b4-454d-b63a-b8672d1aa95a/resourceGroups/databricks-quickstart/providers/Microsoft.Storage/storageAccounts/storageaccountpremium",
+		"groupId": "blob",
+		"fqdns": [
+			"storageaccountpremium.blob.core.chinacloudapi.cn"
+		]
+	}
+}

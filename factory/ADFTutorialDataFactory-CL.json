@@ -1,0 +1,19 @@
+{
+	"name": "ADFTutorialDataFactory-CL",
+	"location": "chinanorth3",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "cc55c0df-9b7c-4bb4-9730-740724965b8f",
+		"tenantId": "954ddad8-66d7-47a8-8f9f-1316152d9587",
+		"userAssignedIdentities": {
+			"/subscriptions/700f5094-60b4-454d-b63a-b8672d1aa95a/resourcegroups/databricks-quickstart/providers/Microsoft.ManagedIdentity/userAssignedIdentities/TestforADFidentity-cl": {
+				"clientId": "1de95f1e-961d-44f9-bc74-3e5c7147cead",
+				"principalId": "47617e33-171c-455e-9ff1-6369ef7e2a7b"
+			},
+			"/subscriptions/fdcb27da-91d5-4223-b967-85cfbc459a75/resourcegroups/baijun-ADLS2-test/providers/Microsoft.ManagedIdentity/userAssignedIdentities/baijun-identity1": {
+				"clientId": "f4fd5ddd-20e0-43ab-9537-5ca1b30267c5",
+				"principalId": "f5094889-fb2a-4642-aaea-d953f1fc4d9d"
+			}
+		}
+	}
+}

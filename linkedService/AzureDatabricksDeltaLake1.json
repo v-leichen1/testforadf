@@ -1,0 +1,17 @@
+{
+	"name": "AzureDatabricksDeltaLake1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLake",
+		"typeProperties": {
+			"domain": "https://adb-717770292086714.2.databricks.azure.cn",
+			"clusterId": "0921-094628-bqm4m8zg",
+			"credential": {
+				"referenceName": "credential2",
+				"type": "CredentialReference"
+			},
+			"workspaceResourceId": "/subscriptions/700f5094-60b4-454d-b63a-b8672d1aa95a/resourceGroups/databricks-quickstart/providers/Microsoft.Databricks/workspaces/databricks-quickstart-2"
+		}
+	}
+}
