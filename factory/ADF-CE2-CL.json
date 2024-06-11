@@ -1,0 +1,9 @@
+{
+	"name": "ADF-CE2-CL",
+	"location": "chinaeast2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "96f71f63-22cd-4dad-95b3-3a38989fcfae",
+		"tenantId": "954ddad8-66d7-47a8-8f9f-1316152d9587"
+	}
+}
